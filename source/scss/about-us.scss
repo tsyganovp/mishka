@@ -1,0 +1,19 @@
+.about-us
+{
+  padding-left: 30px;
+  
+  &:before
+  {
+    content: url(../img/bg-zigzag-line.svg);
+  }
+  .about-us__header
+  {
+   
+    padding-top: 7px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}

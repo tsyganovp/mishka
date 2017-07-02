@@ -1,5 +1,5 @@
 section.week
-    h2.week__good-name Вязанные корзинки
+    h2.week__good-name Вязаные корзинки
     h3.week__good-week Товар недели
     p.week__text Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
     .week__table
@@ -12,13 +12,14 @@ section.week
         .table__row
             p.table__head Высота:
             p.table__head 15см
-        .week__good   
-            .god__image
-                img(src="#" alt="Товар недели")
-            .god__price
-                p Цена: 990 рублей
-            .god__buy
-                a(href="#") Купить
+    .week__good   
+        .good__image
+          picture
+            source(media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x")
+            source(media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, triple-set-desktop@2x.jpg 2x")
+            img(src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели")
+          p.good__price Цена: 990 руб
+          a.btn.good__buy(href="#") Заказать
         
         
             

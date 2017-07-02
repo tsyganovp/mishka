@@ -1,0 +1,57 @@
+.promo
+{
+   background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -13%;
+  
+  .promo__header
+  {
+    padding: 38px;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .promo__promo-block
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+  
+    .promo-block__header
+    {
+      width: 100px;
+      color: white;
+      font-family: "Open Sans";
+      font-size: 19px;
+      font-weight: 700;
+    }
+    
+    img
+    {
+      padding-right: 36px;
+    }
+  }
+  .promo__promo-block--home
+  {
+    background: #68d1bc;
+    
+    .promo-block__header
+    {
+      margin-right: 108px;
+    }
+  }
+  .promo__promo-block--toys
+  {
+    background: #5bc4b3;
+    
+    .promo-block__header
+    {
+      margin-right: 115px;
+    }
+  }
+}

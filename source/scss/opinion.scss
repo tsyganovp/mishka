@@ -1,0 +1,31 @@
+.opinion
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 32px;
+  
+  &:first-of-type
+  {
+    margin-top: 0;
+  }
+  
+  .opinion__text
+  {
+    padding-top: 16px;
+    //padding-bottom: 30px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .opinion__img
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 38px;
+    
+  }
+}

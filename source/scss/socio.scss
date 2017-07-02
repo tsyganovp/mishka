@@ -1,0 +1,19 @@
+.socio
+{
+  margin: 0 auto;
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  
+  .socio__icon
+  {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
