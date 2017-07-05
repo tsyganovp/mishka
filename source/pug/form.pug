@@ -38,27 +38,32 @@ section.form-block
             p Оранжевый
         fieldset.person-group
             legend ФИО
-            label(for="name") Имя
-            input(type="text" id="name" placeholder="Введите ваше имя") 
-            label(for="surname") Фамилия
-            input(type="text" id="surname" placeholder="Укажите фамилию")
-            label(for="acronym") Отчество
-            input(type="text" id="acronym" placeholder="Отчество, если пожелаете")
+            .person-group__block
+                label(for="name") Имя
+                input(type="text" id="name" placeholder="Введите ваше имя") 
+            .person-group__block
+                label(for="surname") Фамилия
+                input(type="text" id="surname" placeholder="Укажите фамилию")
+            .person-group__block
+                label(for="acronym") Отчество
+                input(type="text" id="acronym" placeholder="Отчество, если пожелаете")
         fieldset.contacts-group
-            legend ТЕЛ
-            .contacts__tel
-              input(type="tel" id="tel" class="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*")
-              label(for="tel")
-                  img(src="img/icon-phone.svg" alt="Иконка телефона")
-            legend e-mail
-            .contacts__email
-              input(type="email" id="email" class="email" name="email" placeholder="Ваш Email*")
-              label(for="email")
-                  img(src="img/icon-mail.svg" alt="Иконка почты")
-            legend ДОП
+            legend.legend__tel ТЕЛ
+            .contacts-group__block
+                .contacts__tel
+                  input(type="tel" id="tel" class="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*")
+                  label(for="tel")
+                      img(src="img/icon-phone.svg" alt="Иконка телефона")
+            legend.legend__email e-mail
+            .contacts-group__block
+                .contacts__email
+                  input(type="email" id="email" class="email" name="email" placeholder="Ваш Email*")
+                  label(for="email")
+                      img(src="img/icon-mail.svg" alt="Иконка почты")
+            legend.legend__additional ДОП
             .contacts__message
                textarea(placeholder="Опишите все ваши пожелания к заказу")
-        p *Поля обязательны для заполнения
+        p.form__attention *Поля обязательны для заполнения
         a.btn.btn__confirm(href="#") Отправить заказ
 
 
