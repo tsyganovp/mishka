@@ -7,6 +7,18 @@ section.page-header
           img(src="img/logo-mobile.svg" alt="Логотип")
       button.toogler(type="button")
       nav.header__nav.header__nav--closed
-          each item in ["main","main","main","main","main"] 
-            li(class="nav__item")
-              a(class=`link-${item}`)=item
+          ul
+            li(class="nav__item nav-item--catalog")
+              a(class="nav__link nav-link--catalog") Каталог товаров
+            li(class="nav__item nav-item--order")
+               a(class="nav__link nav-link--order") Вязание на заказ
+            li(class="nav__item nav-item--search")
+              a(class="nav__link nav-link--search")
+                img(class="nav__icon" src="img/icon-search.svg" alt="Иконка меню")
+                p Поиск по сайту
+            li(class="nav__item nav-item--cart")
+               a(class="nav__link nav-link--cart")
+                img(class="nav__icon" src="img/icon-cart.svg" alt="Иконка меню")
+                p Корзина
+      .header__delivery
+        p Бесплатная доставка по России

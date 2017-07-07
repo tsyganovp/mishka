@@ -1,19 +1,41 @@
 .about-us
 {
-  padding-left: 30px;
-  
-  &:before
-  {
+    padding-left: 30px;
+
+    @media screen and ($tablet-widths)
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    /*
+    &:before
+    {
     content: url(../img/bg-zigzag-line.svg);
-  }
-  .about-us__header
-  {
-   
-    padding-top: 7px;
-    padding-bottom: 30px;
-    text-align: left;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-  }
+    }
+*/
+    .about-us__header
+    {
+
+        margin-top: 7px;
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+
+        @media screen and($tablet-widths)
+        {
+            margin-top: 73px;
+            margin-left: 15px;
+            margin-bottom: 46px;
+            width: 100%;
+            color: #000000;
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+    }
 }

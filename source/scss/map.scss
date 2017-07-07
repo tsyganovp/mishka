@@ -1,11 +1,18 @@
 .map
 {
-  margin-top: 16px;
-  background: url("../img/map-mobile@1x.jpg") no-repeat;
-  .map__pointer
-  {
-    text-align: center;
-    padding-top: 165px;
-    padding-bottom: 192px;
-  }
+    margin-top: 16px;
+    background: url("../img/map-mobile@1x.jpg") no-repeat;
+    
+    @media screen and($tablet-widths)
+    {
+        background: url("../img/map-tablet@1x.jpg") no-repeat;
+        margin-top: 35px;
+    }
+
+    .map__pointer
+    {
+        text-align: center;
+        padding-top: 165px;
+        padding-bottom: 192px;
+    }
 }

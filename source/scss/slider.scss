@@ -1,53 +1,140 @@
 .slider
 {
-  .slider__block
-  {
-    .slider__text
+    @media screen and($tablet-widths)
     {
-      color: #444444;
-      font-family: "Open Sans";
-      font-weight: 400;
-      line-height: 30px;
-      font-size: 15px;
+        margin-bottom: 67px;
+        position: relative;
+        display: flex; 
+        flex-direction: column;
+        background: url("../img/review@1x.jpg") no-repeat;
+        background-size: 46%;
     }
-    .slider__author
+    @media(min-resolution: 1.5dppx)
     {
-      margin-top: 56px;
-      margin-bottom: 2px;
-      font-size: 17px;
-      color: #000000;
-      font-weight: 700;
-      line-height: 24px;
+        background: url("../img/review@2x.jpg") no-repeat;
+        background-size: 46%;
     }
-    .slider__twitter
-    {
-      color: #444444;
-      font-weight: 400;
-      line-height: 30px;
-    }
-  }
-  .slider__btn-block
-  {
-    margin-top: 29px;
-    display: flex;
-    flex-direction: row;
     
-    .btn-block__btn
+    .slider__block
     {
-      width: 128px;
-      padding-top: 13px;
-      padding-bottom: 7px;
-      text-align: center;
-      border: 1px solid #ececec;
+        @media screen and($tablet-widths)
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h2
+        {
+            padding-top: 52px;
+            padding-bottom: 25px;
+            color: #000000;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 30px;
+
+            @media screen and($tablet-widths)
+            {
+                padding-top: 78px;
+                padding-left: 50px;
+                padding-bottom: 48px;
+                color: #000000;
+                font-size: 43px;
+                font-weight: 700;
+                line-height: 50px;
+            }
+        }
+        
+        .slider__text
+        {
+            color: #444444;
+            font-family: "Open Sans";
+            font-weight: 400;
+            line-height: 30px;
+            font-size: 15px;
+            
+            @media screen and($tablet-widths)
+            {
+                margin-left: 50px;
+                margin-right: 77px;
+            }      
+        }
+    
+        .slider__author
+        {
+            margin-top: 56px;
+            margin-bottom: 2px;
+            font-size: 17px;
+            color: #000000;
+            font-weight: 700;
+            line-height: 24px;
+            
+            @media screen and($tablet-widths)
+            {
+                padding-left: 50px;
+            }
+        }
+        
+        .slider__twitter
+        {
+            color: #444444;
+            font-weight: 400;
+            line-height: 30px;
+            
+            @media screen and($tablet-widths)
+            {
+                padding-left: 50px;
+                padding-bottom: 53px;
+            }
+        }
     }
-  }
-  .slider__btn
-  {
-    margin-top: 38px;
-    padding-top: 13px;
-    padding-bottom: 15px;
-    width: 257px;
-    text-decoration: none;
-    color: black;
-  }
+    
+    .slider__btn-block
+    {
+        margin-top: 29px;
+        display: flex;
+        flex-direction: row;
+        
+        @media screen and($tablet-widths)
+        {
+            margin: 0;
+            position: absolute;
+            right: 49px;
+            bottom: 54px;
+        }
+
+        .btn-block__btn
+        {
+            width: 128px;
+            padding-top: 13px;
+            padding-bottom: 7px;
+            text-align: center;
+            border: 1px solid #ececec;
+            
+            @media screen and($tablet-widths)
+            {
+                width: 88px;
+                border: 0;
+            }
+        }
+    }
+    
+    .slider__btn
+    {
+        margin-top: 38px;
+        padding-top: 13px;
+        padding-bottom: 15px;
+        width: 257px;
+        text-decoration: none;
+        color: black;
+        
+        @media screen and($tablet-widths)
+        {
+            
+            width: 171px;
+            margin: 0;
+            position: absolute;
+            top: 79px;
+            right: 50px;
+        }
+    }
 }

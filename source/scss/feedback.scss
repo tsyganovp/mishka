@@ -1,14 +1,11 @@
 .feedback
 {
-  padding-left: 30px;
-  
-  h2
-  {
-    padding-top: 52px;
-    padding-bottom: 25px;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-  }
+    padding-left: 30px;
+
+    @media screen and($tablet-widths)
+    {
+        margin-top: 27px;
+        display: flex;
+        padding-left: 0px;
+    }
 }

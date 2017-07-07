@@ -1,89 +1,186 @@
 .week
 {
-  padding-left: 29px;
-  padding-right: 25px;
-  
-  .week__good-name
-  {
-    padding-top: 27px;
-    padding-bottom: 8px;
-    //text-align: center;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-  }
-  .week__good-week
-  {
-    padding-bottom: 21px;
-    color: #63d1bb;
-    font-family: "Open Sans";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-  .week__text
-  {
-    color: #757575;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  .week__table
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 12px;
-    
-    .table__row
+    padding-left: 29px;
+    padding-right: 25px;
+
+    @media screen and ($tablet-widths)
     {
-      display: flex;
-      flex-direction: row;
-      padding-top: 10px;
-      padding-bottom: 9px;
-      color: #757575;
-      border-bottom: 2px solid #ededed;
-      
-      .table__head
-      {
-        width: 30%;
-        //margin-right: 0px;
-        &:last-of-type
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        //width: 768px;
+        position: relative;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: right;
+        
+        &:before
         {
-          width: 55%;
-          padding-left: 19px;
+            content: "";
+            //content: url(../img/bg-zigzag-fill.svg);
+            background: url(../img/bg-zigzag-fill.svg);
+            width: 753px;
+            height: 31px;
+            position: absolute;
+            top: -16px;
+            left: 14px;
         }
-      }
     }
-  }
-  .week__good
-  {
-    .good__image
+    
+    .week__good-name
     {
-      margin-top: 24px;
-      
-      img
-      {
-        width: 100%;
-      }
+        padding-top: 27px;
+        padding-bottom: 8px;
+        //text-align: center;
+        color: #000000;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+
+        @media screen and ($tablet-widths)
+        {
+            padding-top: 47px;
+            color: #000000;
+            font-family: "Open Sans";
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
     }
+    .week__good-week
+    {
+        padding-bottom: 21px;
+        color: #63d1bb;
+        font-family: "Open Sans";
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @media screen and($tablet-widths)
+        {
+            width: 90px;
+            padding-top: 55px;
+            padding-left: 132px;
+            text-align: center;
+        }
+    }
+    
+    .week__information
+    {
+        @media screen and($tablet-widths)
+        {
+            position: relative;
+            width: 282px;
+            margin-top: 30px;
+            margin-right: 52px;
+        }
+
+        .week__text
+        {
+            color: #757575;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+            @media screen and($tablet-widths)
+            {
+                text-align: left;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 30px;  
+            }
+        }
+        .week__table
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 12px;
+
+            @media screen and($tablet-widths)
+            {
+                margin-top: 33px;
+                text-align:left;
+            }
+
+            .table__row
+            {
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+                padding-bottom: 9px;
+                color: #757575;
+                border-bottom: 1px solid #ededed;
+
+                .table__head
+                {
+                    width: 30%;
+                    //margin-right: 0px;
+
+                    &:last-of-type
+                    {
+                        width: 55%;
+                        padding-left: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .week__good
+    {
+        width: 333px;
+        padding-bottom: 40px;
+
+        .good__image
+        {
+            margin-top: 24px;
+
+            @media screen and($tablet-widths)
+            {
+                margin-top: 37px;    
+            }
+
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+    
     .good__price
     {
-      margin-top: 13px;
-      text-align: center;
-      color: #444444;
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 24px;
+        margin-top: 13px;
+        text-align: center;
+        color: #444444;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+
+        @media screen and($tablet-widths)
+        {
+            position: absolute;
+            top: 435px;
+            left: 122px;
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
+    
     .good__buy
     {
-      width: 257px;
-      margin-top: 26px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+        width: 257px;
+        margin-top: 26px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        @media screen and($tablet-widths)
+        {
+            width: 288px;
+            position: absolute;
+            top: 480px;
+            left: 48px;
+        }
     }
-  }
 }
