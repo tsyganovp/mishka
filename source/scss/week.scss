@@ -130,9 +130,13 @@
     }
     .week__good
     {
-        width: 333px;
-        padding-bottom: 40px;
-
+        //width: 333px;
+        //padding-bottom: 40px;
+        
+        @media screen and ($tablet-widths)
+        {
+            width: 333px;
+        }
         .good__image
         {
             margin-top: 24px;
@@ -172,6 +176,7 @@
     {
         width: 257px;
         margin-top: 26px;
+        margin-bottom: 72px;
         padding-top: 14px;
         padding-bottom: 14px;
 

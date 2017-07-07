@@ -1,11 +1,12 @@
 .socio
 {
     margin: 0 auto;
+    padding-left: 32px;
     width: 260px;
     display: flex;
     flex-direction: row;
     background: #f2f2f2;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -13,8 +14,8 @@
 
     @media screen and ($tablet-widths)
     {
-        margin: 0;
-        margin-left: 98px;
+        margin: 0 auto;
+        margin-left: 137px;
         //margin-right: 8px;
         padding: 0;
         border: 0;

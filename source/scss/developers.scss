@@ -1,8 +1,8 @@
 .developers
 {
     margin: 0 auto;
-    margin-top: 19px;
-    margin-bottom: 31px;
+    padding-top: 19px;
+    padding-bottom: 31px;
     width: 260px;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,8 @@
     
     @media screen and ($tablet-widths)
     {
+        width: 47%;
+        padding-top: 25px;
         margin: 0;
     }
 
