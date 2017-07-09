@@ -6,6 +6,14 @@
     margin-bottom: 58px;
     border: 1px solid #ececec;
     
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        width: 668px;
+        display: flex;
+        flex-direction: column;   
+    }
+    
     .video__header
     {
         padding-top: 23px;
@@ -14,11 +22,24 @@
         justify-content: flex-start;
         align-items: baseline;
         
+        @media screen and ($tablet-widths)
+        {
+            order: 2;
+        }
+        
         img
         {
             margin-left: 34px;
             margin-right: 25px;
             margin-bottom: 40px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-left: 41px;
+                margin-right: 15px;
+                margin-top: 3px;
+                margin-bottom: 0;
+            }
         }
         
         h2
@@ -28,29 +49,66 @@
             font-size: 17px;
             font-weight: 700;
             line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-top: 9px;
+                padding-left: 17px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+            }
         }
     }
     .video__screen
     {
         position: relative;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 1;
+        }
         .video__play
         {
             position: absolute;
             top:36px;
             left: 79px;
+            
+            @media screen and ($tablet-widths)
+            {
+                top: 186px;
+                left: 280px;
+            }
         }
     }
     .video__text
     {
         margin-top: 22px;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-top: 31px;
+            order: 3;
+        }
+        
         p
         {
+            width: 95%;
             padding-left: 34px;
             padding-bottom: 29px;
             color: #444444;
             font-size: 13px;
             font-weight: 400;
             line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                //width: 95%;
+                //margin-top: 30px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 30px;
+            }
         }
     }
     .video__button
@@ -61,6 +119,14 @@
         padding-top: 15px;
         padding-bottom: 13px;
         width: 190px;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 4;
+            width: 581px;
+            margin-top: 6px;
+            margin-bottom: 44px;
+        }
     }
     
 }

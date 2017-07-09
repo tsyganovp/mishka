@@ -2,6 +2,25 @@
 {
     width: 260px;
     margin: 0 auto;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 80px;
+        width: 668px;
+        position: relative;
+        
+        &:before
+        {
+            content: "";
+            //content: url(../img/bg-zigzag-fill.svg);
+            background: url(../img/bg-zigzag-fill.svg);
+            width: 768px;
+            height: 31px;
+            position: absolute;
+            top: -98px;
+            left: -254px;
+        }
+    }
 }
 
 .good
@@ -9,6 +28,49 @@
     margin-top: 30px;
     border: 1px solid #ececec;
     
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        width: 667px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        
+         &:first-of-type
+        {
+             margin-top: 30px;
+        }
+    }
+    .good__img
+    {
+        img
+        {
+            vertical-align: middle;
+        }
+    }
+    .good__description
+    {
+        &:last-of-type
+        {
+            @media screen and ($tablet-widths)
+            {
+                width: 30%;
+            }
+        }
+    }
+    .good__text
+    {
+        @media screen and ($tablet-widths)
+        {
+            width: 282px;
+            padding-bottom: 159px;
+               
+        }
+    }
+    .good__text--last
+    {
+        padding-bottom: 135px;
+    }
     .good__name
     {
         padding-top: 23px;
@@ -18,6 +80,13 @@
         font-size: 17px;
         font-weight: 700;
         line-height: 24px;
+        
+        @media screen and ($tablet-widths)
+        {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
     }
     .good__descr
     {
@@ -27,6 +96,13 @@
         font-size: 13px;
         font-weight: 400;
         line-height: 30px;
+        
+        @media screen and ($tablet-widths)
+        {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+        }
     }
     .good__cart
     {
@@ -38,6 +114,13 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        
+        @media screen and ($tablet-widths)
+        {
+            width: 280px;
+            margin: 0;
+            margin-left: 34px;
+        }
         .cart__price
         {
             padding-right: 114px;
@@ -45,6 +128,14 @@
             font-size: 15px;
             font-weight: 700;
             line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-right: 168px;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 24px;
+            }
         }
     }
     
