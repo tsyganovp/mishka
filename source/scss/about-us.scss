@@ -37,5 +37,14 @@
             font-weight: 700;
             line-height: 50px;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-top: 80px;
+            margin-left: 213px;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
     }
 }

@@ -8,6 +8,14 @@
         margin-top: 50px;
         margin-bottom: 55px;
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin: 0;
+        position: absolute;
+        top: 3323px;
+        left: 250px;
+    }
 
 
     .write-us__btn

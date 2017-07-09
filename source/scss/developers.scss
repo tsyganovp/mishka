@@ -15,6 +15,11 @@
         padding-top: 25px;
         margin: 0;
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        width: 30%;
+    }
 
     .developers__text
     {
@@ -28,8 +33,7 @@
         {
             margin: 0;
             padding-right: 19px;
-        }
-    
+        }  
     }
     
     img

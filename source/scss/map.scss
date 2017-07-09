@@ -8,6 +8,14 @@
         background: url("../img/map-tablet@1x.jpg") no-repeat;
         margin-top: 35px;
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        position: absolute;
+        width: 534px;
+        right: 67px;
+        top: 2884px;
+    }
 
     .map__pointer
     {

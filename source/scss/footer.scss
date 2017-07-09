@@ -9,6 +9,13 @@
         padding-top: 33px;
         padding-bottom: 50px;
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-top: 216px;
+        padding-top: 24px;
+        padding-left: 72px;
+    }
 
     .footer__img
     {

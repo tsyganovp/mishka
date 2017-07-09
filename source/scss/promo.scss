@@ -14,6 +14,12 @@
         padding-right: 50px;
     }
     
+    @media screen and ($desktop-widths)
+    {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    
     .promo__header
     {
         padding: 38px;
@@ -34,6 +40,16 @@
             font-weight: 700;
             line-height: 50px;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            padding-left: 135px;
+            padding-right: 135px;
+            padding-bottom: 361px;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
     }
     
     .promo__promo-block
@@ -52,6 +68,11 @@
             padding-bottom: 28px;
             width: 44.3%;  
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            width: 46.3%;
+        }
 
         .promo-block__header
         {
@@ -65,6 +86,7 @@
         img
         {
             padding-right: 36px;
+            
         }
     }
     
@@ -75,6 +97,11 @@
         .promo-block__header
         {
             margin-right: 119px;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 313px;
+            }
         }
     }
     .promo__promo-block--toys
@@ -84,6 +111,11 @@
         .promo-block__header
         {
             margin-right: 115px;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 303px;
+            }
         }
     }
 }

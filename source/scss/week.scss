@@ -25,7 +25,19 @@
             position: absolute;
             top: -16px;
             left: 14px;
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 1185px;
+            }
         }
+        
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        padding-bottom: 290px;
+        text-align: left;
     }
     
     .week__good-name
@@ -47,6 +59,18 @@
             font-weight: 700;
             line-height: 50px;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            order: 2;
+            z-index: 2;
+            width: 69%;
+            padding-top: 124px;
+            padding-left: 35px;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
     }
     .week__good-week
     {
@@ -65,6 +89,14 @@
             padding-left: 132px;
             text-align: center;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            order: 1;
+            width: 10%;
+            padding-left: 51px;
+            padding-top: 137px;
+        }
     }
     
     .week__information
@@ -75,6 +107,12 @@
             width: 282px;
             margin-top: 30px;
             margin-right: 52px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-left: 200px;
+            order: 3;
         }
 
         .week__text
@@ -103,6 +141,10 @@
             {
                 margin-top: 33px;
                 text-align:left;
+            }
+            @media screen and ($desktop-widths)
+            {
+                margin-top: 48px;
             }
 
             .table__row
@@ -137,6 +179,14 @@
         {
             width: 333px;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            width: 43%;
+            position: absolute;
+            right: 79px;
+            top: 36px;
+        }
         .good__image
         {
             margin-top: 24px;
@@ -170,6 +220,12 @@
             font-size: 20px;
             font-weight: 700;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            top: 586px;
+            left: 324px;
+        }
     }
     
     .good__buy
@@ -186,6 +242,12 @@
             position: absolute;
             top: 480px;
             left: 48px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            top: 630px;
+            left: 250px;
         }
     }
 }

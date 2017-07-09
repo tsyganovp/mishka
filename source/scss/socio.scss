@@ -20,6 +20,11 @@
         padding: 0;
         border: 0;
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left:330px;
+    }
 
     .socio__icon
     {
