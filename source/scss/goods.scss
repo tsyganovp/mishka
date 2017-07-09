@@ -18,7 +18,22 @@
             height: 31px;
             position: absolute;
             top: -98px;
-            left: -254px;
+            left: -50px;
+        }
+    }
+    
+    @media screen and($desktop-widths)
+    {
+        width: 1050px;  
+        margin-top: 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        &:before
+        {
+            width: 1147px;
+            top: -143px;
         }
     }
 }
@@ -39,6 +54,28 @@
          &:first-of-type
         {
              margin-top: 30px;
+        }
+    }
+    
+    @media screen and($desktop-widths)
+    {
+        width: 315px;
+        margin: 0 auto; 
+        margin-left: 27px;
+        margin-right: 27px;
+        
+        &:first-of-type
+        {
+            margin: 0;
+            margin-left: 0px;
+            margin-right: 21px;
+        }
+        
+        &:last-of-type
+        {
+            margin: 0;
+            margin-left: 21px;
+            margin-right: 0px;
         }
     }
     .good__img
@@ -63,13 +100,25 @@
         @media screen and ($tablet-widths)
         {
             width: 282px;
-            padding-bottom: 159px;
-               
+            padding-bottom: 159px;               
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            padding-bottom: 23px;
         }
     }
     .good__text--last
     {
-        padding-bottom: 135px;
+        @media screen and ($tablet-widths)
+        {
+            padding-bottom: 135px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+           padding-bottom: 0px; 
+        }
     }
     .good__name
     {
@@ -135,6 +184,11 @@
                 font-size: 17px;
                 font-weight: 700;
                 line-height: 24px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                padding-right: 154px;
             }
         }
     }
