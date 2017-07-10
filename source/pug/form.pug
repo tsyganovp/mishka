@@ -1,7 +1,7 @@
 section.form-block
     form.form
-        fieldset.radio-group
-            legend Тип 
+        legend.type Тип
+        .form-block.radio-group
             .radio-block
               input(type="radio" class="radio" id="accessory" name="accessory")
               label(for="accessory") 
@@ -10,8 +10,8 @@ section.form-block
               input(type="radio" class="radio" id="toy" name="toy" value="toy")
               label(for="toy")
               p Детская игрушка
-        fieldset.checkbox-group
-          legend Цвет
+        legend.color Цвет
+        .form-block.checkbox-group
           .checkbox-block
             input(type="checkbox" class="checkbox" id="white" name="white" value="white")
             label(for="white")
@@ -36,8 +36,8 @@ section.form-block
             input(type="checkbox" class="checkbox" id="orange" name="orange" value="orange")
             label(for="orange") 
             p Оранжевый
-        fieldset.person-group
-            legend ФИО
+        legend.person ФИО
+        .form-block.person-group
             .person-group__block
                 label(for="name") Имя
                 input(type="text" id="name" placeholder="Введите ваше имя") 
@@ -47,23 +47,24 @@ section.form-block
             .person-group__block
                 label(for="acronym") Отчество
                 input(type="text" id="acronym" placeholder="Отчество, если пожелаете")
-        fieldset.contacts-group
-            legend.legend__tel ТЕЛ
+        legend.legend__tel ТЕЛ
+        .form-block.contacts-group
             .contacts-group__block
                 .contacts__tel
                   input(type="tel" id="tel" class="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*")
                   label(for="tel")
                       img(src="img/icon-phone.svg" alt="Иконка телефона")
-            legend.legend__email e-mail
-            .contacts-group__block
+        legend.legend__email e-mail
+        .form-block.contacts-group.contacts-group--email
+             .contacts-group__block
                 .contacts__email
                   input(type="email" id="email" class="email" name="email" placeholder="Ваш Email*")
                   label(for="email")
                       img(src="img/icon-mail.svg" alt="Иконка почты")
-            legend.legend__additional ДОП
-            .contacts__message
-               textarea(placeholder="Опишите все ваши пожелания к заказу")
-        p.form__attention *Поля обязательны для заполнения
-        a.btn.btn__confirm(href="#") Отправить заказ
+        legend.legend__additional ДОП
+        .contacts__message
+           textarea(placeholder="Опишите все ваши пожелания к заказу")
+    p.form__attention *Поля обязательны для заполнения
+    a.btn.btn__confirm(href="#") Отправить заказ
 
 

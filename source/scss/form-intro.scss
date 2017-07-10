@@ -1,6 +1,25 @@
+.form-intro
+{
+    @media screen and ($tablet-widths)
+    {
+        position: relative;
+        
+        &:before
+        {
+            content: "";
+            //content: url(../img/bg-zigzag-fill.svg);
+            background: url(../img/bg-zigzag-fill.svg);
+            width: 768px;
+            height: 31px;
+            position: absolute;
+            bottom: 118px;
+            //left: -50px;
+        }
+    }
+}
 .form-intro__text
 {
-    padding-top: 23px;
+    margin-top: 23px;
     margin-left: 30px;
     //margin: 0 auto;
     width: 250px;
@@ -8,4 +27,14 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 72px;
+        margin-left: 49px;
+        width: 680px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+    }
 }

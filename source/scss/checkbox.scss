@@ -40,8 +40,14 @@
   height: 35px;
   border: 2px solid black;
   background: white;
-
-
+    
+  @media screen and ($tablet-widths)
+  {
+    width: 50px;
+    height: 50px;
+    background: #f2f2f2;
+  }
+    
   &:hover
   {
     background: #e6e6e6;
@@ -62,6 +68,12 @@
   //background: #FFF;
   //box-shadow: 0 2px 5px rgba(0,0,0,.3);
   transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+    
+    @media screen and ($tablet-widths)
+    {
+        top: 13px;
+        left: 13px;
+    }
 }
 /* Меняем фон чекбокса, когда он включен. */
 .checkbox:checked + label:before

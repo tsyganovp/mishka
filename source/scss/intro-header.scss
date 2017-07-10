@@ -4,25 +4,37 @@
     padding-bottom: 74px;
     background: #f1f1f1;
     text-align: center;
-    color: #000000;
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 30px;
-
+    
+    h1
+    {
+        color: #000000;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 30px;
+        
+        @media screen and ($tablet-widths)
+        {
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
+        
+    }
     @media screen and ($tablet-widths)
     {
         padding-top: 95px;
         padding-bottom: 79px;
-        font-size: 43px;
-        font-weight: 700;
-        line-height: 50px;
     }
     
     @media screen and ($desktop-widths)
     {
-        font-size: 53px;
-        font-weight: 700;
-        line-height: 57px;
         padding-bottom: 100px;
     }
 }

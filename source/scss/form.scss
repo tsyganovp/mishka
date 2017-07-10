@@ -2,10 +2,24 @@
 {
     margin: 0 auto;
     width: 260px;
+    
+    @media screen and ($tablet-widths)
+    {
+        width: 768px;
+    }
+}
+.form-block
+{
+    @media screen and ($tablet-widths)
+    {
+        position: relative;
+    }
 }
 
 legend
 {
+    width: 260px;
+    margin-top: 25px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -26,15 +40,63 @@ legend
         height: 1px;
         width: 198px;      
     }
+    
+    @media screen and ($tablet-widths)
+    {
+        //width: 600px;
+        margin-top: 75px;
+        margin-left: 50px;
+        margin-bottom: 145px;
+   
+        &:after
+        {
+            display: none;
+        }
+    }
+}
+.color
+{
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        top: 229px;
+        margin: 0;
+        margin-left: 50px;
+        margin-bottom: 67px;
+        z-index: 2;       
+    }
+}
+
+.person
+{
+    @media screen and ($tablet-widths)
+    {
+        margin: 0;
+        margin-left: 48px;
+        position: absolute;
+        //left: 73px;     
+    }
 }
 
 .checkbox-group
 {
     display: flex;
     flex-direction: column;
-    margin-top: 41px;
+    margin-top: 0px;
     margin-bottom: 40px;
     border: 0; 
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-bottom: 67px;
+        padding-top: 20px;
+        padding-bottom: 66px;
+        padding-left: 217px;
+        background: #f2f2f2;
+        flex-direction: row;
+        flex-wrap: wrap;    
+    }
 
     .checkbox-block
     {
@@ -52,6 +114,66 @@ legend
             font-size: 17px;
             font-weight: 700;
             line-height: 18px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 15px;
+                margin-left: 84px;
+            }
+        }
+        &:nth-child(1)
+        {
+            margin-top: 25px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-right: 119px;
+            }
+        }
+        
+        &:nth-child(2)
+        {
+            margin-top: 33px;
+        }
+        &:nth-child(3)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+                margin-right: 79px;
+            }
+        }
+        &:nth-child(4)
+        {
+            margin-top: 35px;
+
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+            }
+        }
+        
+        &:nth-child(5)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+                margin-right: 100px;
+            }
+        }
+        
+        &:nth-child(6)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+            }
         }
         
     }
@@ -59,10 +181,18 @@ legend
 
 .radio-group
 {
+    margin-top: 0;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
     border: 0; 
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        right: 258px;
+        top: -34px;
+    }
 
     .radio-block
     {
@@ -70,6 +200,11 @@ legend
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-bottom: 28px;
+        }
 
         p
         {
@@ -85,18 +220,33 @@ legend
 }
 .person-group
 {
-    margin-top: 72px;
+    margin-top: 7px;
     margin-bottom: 31px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border: 0;
-
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-left: 220px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+    }
+    
     .person-group__block 
     {
         display: flex;
         flex-direction: column;
         border-bottom: 2px solid black;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-bottom: 53px;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 0;
+        }
 
         label
         {
@@ -105,6 +255,16 @@ legend
             font-size: 17px;
             font-weight: 700;
             line-height: 18px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                padding: 0;
+                margin-right: 27px;
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 18px;
+            }
         }
 
         input
@@ -116,70 +276,54 @@ legend
             font-size: 17px;
             font-weight: 400;
             line-height: 18px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                padding: 0;
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 18px;
+            }
         }
     }
 }
 .contacts-group
 {
     border: 0;
+    
+    @media screen and ($tablet-widths)
+    {
+        padding-top: 47px;
+        padding-left: 230px;
+        background: #f2f2f2;
+    }
     .contacts__tel
     {
         padding-top: 13px;
         padding-bottom: 14px;
         display: flex;
     }
-    .contacts__email
+}
+.contacts-group--email
+{
+    @media screen and ($tablet-widths)
     {
         padding-top: 15px;
-        padding-bottom: 5px;
-        display: flex;
-    }
-    .legend__email
-    {
-        margin-top: 33px;
-        display: flex;
-         &:after
-        {
-            position: absolute;
-            content: "";
-            top: 7px;
-            left: 80px;
-            background: #62d1ba;
-            height: 1px;
-            width: 180px;      
-        }
-        
-    }
-    .legend__additional
-    {
-        margin-top: 32px;
-    }
-    .contacts-group__block
-    {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border-bottom: 2px solid black;
-        
-        input
-        {
-            padding-right: 28px;
-            opacity: 0.3;
-            color: #444444;
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 18px;
-        }
-        .email
-        {
-            padding-right: 26px;
-        }
+        padding-bottom: 49px;
     }
 }
 .contacts__message
 {
     margin-top: 24px;
     border: 2px solid black;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        margin-left: 217px;
+        margin-right: 49px;
+    }
 
     textarea
     {
@@ -198,16 +342,140 @@ legend
 
 p.form__attention
 {
+     margin-left: 30px;
     margin-top: 17px;
     color: #444444;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        right: 0;
+        margin-right: 49px;
+        margin-top: 63px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+    }
 }
 .btn__confirm
 {
+      margin: 0 auto;
+    width: 258px;
   margin-top: 31px;
   margin-bottom: 53px;
   padding-top: 15px;
   padding-bottom: 13px;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin: 0;
+        margin-top: 54px;
+        margin-left: 50px;
+        margin-bottom: 48px;
+        width: 226px;
+    }
+}
+
+.legend__additional
+{
+    margin-top: 39px;
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        margin: 0;
+        margin-top: 69px;
+        margin-left: 51px;
+    }
+}
+
+.contacts__email
+{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.legend__email
+{
+    margin-top: 29px;
+    display: flex;
+
+    &:after
+    {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 80px;
+        background: #62d1ba;
+        height: 1px;
+        width: 180px;      
+    }
+    
+    @media screen and ($tablet-widths)
+    {
+        z-index: 2;
+        position: absolute;
+        margin: 0;
+        margin-top: 41px;
+        margin-left: 51px;
+    }
+}
+
+.contacts-group__block
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid black;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-right: 50px;
+        background: #f2f2f2;
+    }
+    
+    input
+    {
+        padding-right: 28px;
+        opacity: 0.3;
+        color: #444444;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 18px;
+        background: #f2f2f2;
+        border: 0;
+        
+        @media screen and ($tablet-widths)
+        {
+            padding-right: 245px;
+        }
+    }
+    .email
+    {
+        padding-right: 26px;
+        
+        @media screen and ($tablet-widths)
+        {   
+            padding-right: 225px;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
+
+.legend__tel
+{
+    @media screen and ($tablet-widths)
+    {
+        z-index: 2;
+        position: absolute;
+        margin: 0;
+        margin-top: 69px;
+        margin-left: 51px;
+    }
 }
