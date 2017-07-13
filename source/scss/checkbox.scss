@@ -12,6 +12,13 @@
 .checkbox + label
 {
   cursor: pointer;
+    :hover
+    {
+        .checkbox:not(checked) + label:before
+        {
+            border: 2px solid red;
+        }
+    }
 }
 
 /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.

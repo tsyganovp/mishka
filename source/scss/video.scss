@@ -101,6 +101,14 @@
             top:36px;
             left: 79px;
             
+            &:hover
+            {
+                transform: scale(1.2);
+            }
+            &:active
+            {
+                transform: scale(0.8);
+            }
             @media screen and ($tablet-widths)
             {
                 top: 186px;

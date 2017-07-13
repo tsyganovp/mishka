@@ -20,7 +20,8 @@
     {
         margin-top: 91px;
         margin-left: 106px;
-        align-items: flex-start;
+        padding-bottom: 105px;
+        align-items: flex-start;      
     }
 
     h2
@@ -152,6 +153,11 @@
         
         .contacts__email
         {
+            @media screen and ($tablet-widths)
+            {
+                width: 50%;
+                padding-top: 0;
+            }
             @media screen and ($desktop-widths)
             {
                 margin-left: 0px;
@@ -160,9 +166,14 @@
         }
         .contacts__address
         {
+            @media screen and ($tablet-widths)
+            {
+                width: 40%;
+                padding-top: 0;
+            }
             @media screen and ($desktop-widths)
             {
-               width: 50%;
+               width: 40%;
                margin-left: 0px;
             }
         }

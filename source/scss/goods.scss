@@ -57,6 +57,16 @@
         }
     }
     
+    &:hover
+    {
+        box-shadow: 0 0 35px #dedede;
+    }
+    
+    &:active
+    {
+        box-shadow: 0 0 15px #dedede;
+    }
+    
     @media screen and($desktop-widths)
     {
         width: 315px;
@@ -135,6 +145,17 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 24px;
+        }
+        
+        &:hover
+        {
+            cursor: pointer;
+            color: #666666;
+        }
+
+        &:active
+        {
+            color: #b2b2b2;
         }
     }
     .good__descr

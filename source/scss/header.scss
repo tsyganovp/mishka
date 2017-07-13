@@ -1,278 +1,266 @@
-.page-header
-{
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid #ededed;
-
-    @media screen and ($tablet-widths)
-    {
-
-    }
-}
-
 .header__inner
 {
-    display: flex;
-    flex-wrap: wrap;
-
+    position: relative;
+    
     .header__logo
     {
+        width: 90px;
         margin: 0 auto;
         padding-top: 22px;
-        padding-bottom: 18px;
-        text-align: center;
-
+        padding-bottom: 22px;
+        
         @media screen and ($tablet-widths)
         {
             margin: 0;
-            text-align: inherit;
-            padding-left: 49px;
-            padding-right: 209px;
+            padding-left: 48px;
+            padding-top: 22px;
             padding-bottom: 15px;
         }
         
-
         @media screen and ($desktop-widths)
         {
-            margin-left: 476px;
-            padding-top: 9px;
-            padding-bottom: 0;
+            margin: 0 auto;
+            padding: 0;
+            padding-top: 10px;
         }
     }
-
     .header__nav
     {
-        display: none;
-
-        @media screen and ($tablet-widths)
+        ul
         {
+            width: 320px;
+            padding: 0;
+            list-style: none;
             display: flex;
-            flex-wrap: wrap;
-
-            ul
-            {
-
+            flex-direction: column;
+            align-items: center;
+            
+            .nav__item
+            {   
+                width: 320px;
+                padding-top: 32px;
+                padding-bottom: 20px;
+                box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+                
                 @media screen and ($tablet-widths)
                 {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                list-style: none;
-                }
-
-                .nav__item
-                {
-
-                    @media screen and ($tablet-widths)
-                    {
+                    padding-top: 32px;
+                    padding-bottom: 20px;
                     display: flex;
-                    color: #000000;
-                    font-size: 15px;
+                    box-shadow: 0 0px 0 #ececec, inset 0 0px 0 #ececec;
+                }
+                
+                .nav__link
+                {
+                    cursor: pointer;
+                    padding-left: 72px;
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 17px;
                     font-weight: 700;
                     line-height: 24px;
-                    }
-
-                    .nav__link
+                    
+                    &:hover
                     {
-
+                        color: #666666;
+                    }
+                    
+                    &:active
+                    {
+                        color: #eaeaea;
+                    }
+                    
+                    img
+                    {
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        
                         @media screen and ($tablet-widths)
                         {
-                            display: flex;
-                            position: absolute;
+                            padding: 0;
                         }
-
-                        p
-                        {
-                            @media screen and ($tablet-widths)
-                            {
-                                display: flex;
-                                color: #000000;
-                                font-size: 15px;
-                                font-weight: 700;
-                                line-height: 24px;
-                            }
-                        }
-                    }
-                }
-
-                .nav-item--search
-                {
-
-                    @media screen and ($tablet-widths)
-                    {
-                        position: absolute;
-                        left: 370px;
-                        padding-top: 36px;
-                        padding-bottom: 56px;
-                        padding-left: 33px;
-                        padding-right: 49px;
-                        border-left: 1px solid #ececec;
-                        border-right: 1px solid #ececec;
                     }
                     
-                    @media screen and ($desktop-widths)
+                    p
                     {
-                        left: 775px;
-                    }
-
-                    .nav-link--search
-                    {
-
-                        p
-                        {
-                            @media screen and ($tablet-widths)
-                            {
-                                display: none;
-                            }
-                        }
-
-                        img
-                        {
-                        // padding-left: 31px;
-                        // padding-right: 31px;
-                        }
+                        text-align: center;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
                     }
                 }
-
-                .nav-item--cart
+                .nav__link--search
                 {
-                    @media screen and ($tablet-widths)
-                    {
-                        position: absolute;
-                        left: 485px;
-                        padding-top: 32px;
-                        padding-bottom: 56px;
-                    }
-                    
-                    @media screen and ($desktop-widths)
-                    {
-                        left: 890px;
-                    }
-
-                    .nav-link--cart
-                    {
-                        p
-                        {
-                            @media screen and ($tablet-widths)
-                            {
-                                display: block;
-                                padding-left: 31px;
-                            }
-                        }
-
-                        img
-                        {
-                            //padding-left: 31px;
-                            //padding-right: 31px;
-                        }
-                    }
+                    padding-left: 58px;
                 }
-
-                .nav-item--catalog
+                .nav__link--cart
+                {
+                    padding-left: 58px;
+                }
+            }
+            .nav__item--search
+            {
+                @media screen and ($tablet-widths)
                 {
                     position: absolute;
-                    left: 50px;
+                    top: 0;
+                    right: 315px;
+                    border: 1px solid #ececec;
+                    border-bottom: 0;
+                    width: 80px;
+                    padding-top: 36px;
+                    padding-bottom: 34px;
+                    
+                    .nav__link--search
+                    {
+                        justify-content: center;
+                        width: 80px;
+                        padding: 0;
+                    }
+        
+                    p
+                    {
+                        display: none;
+                    }
+                }
+            }
+            .nav__item--cart
+            {
+                @media screen and ($tablet-widths)
+                {
+                    width: 314px;
+                    padding-top: 30px;
+                    padding-bottom: 34px;
+                    position: absolute;
+                    top: 0;
+                    right: 0px;
+                    border: 1px solid #ececec;
+                    border-bottom: 0;
+                    
+                    .nav__link--cart
+                    {
+                        //width: 233px;
+                        justify-content: center;
+                        padding: 0;
+                        padding-left: 32px;
+                        padding-right: 31px;
+                    }
+        
+                    p
+                    {
+                        display: block;
+                        padding-left: 32px;
+                    }
+                }
+            }
+            .nav__item--catalog
+            {
+                @media screen and ($tablet-widths)
+                {   
+                    position: absolute;
+                    padding: 0;
                     top: 106px;
-                    
-                    @media screen and ($tablet-widths)
+                    left: 50px;
+                          
+                    .nav__link--catalog
                     {
-                        left: 50px;
-                        top: 106px;
-                    }
-                    
-                    @media screen and ($desktop-widths)
-                    {
-                        left: 74px;
-                        top: 31px;
-                    }
-
-                    .nav-link--catalog
-                    {
-                        width: 140px;
+                        padding: 0;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 24px;
                     }
                 }
+                
+                @media screen and ($desktop-widths)
+                {
+                    //top: 50px;
+                    top: 31px;
+                    left: 100px;
 
-                .nav-item--order
+                    .nav__link--catalog
+                    {
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .nav__item--order
+            {
+                @media screen and ($tablet-widths)
                 {
                     position: absolute;
-                    left: 218px;
-                    top:106px;
+                    padding: 0;
+                    top: 106px;
+                    left: 217px;
                     
-                    @media screen and ($desktop-widths)
+                    .nav__link--order
                     {
-                        left: 294px;
-                        top: 31px;
+                        padding: 0;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 24px;
                     }
+                }
+                @media screen and ($desktop-widths)
+                {
+                    //top: 50px;
+                    top: 31px;
+                    left: 320px;
 
-
-                    .nav-link--order
+                    .nav__link--order
                     {
-                        width: 140px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
                     }
                 }
             }
         }
     }
+}
+.inputs
+{
+    display: none;
     
-    .header__delivery
+    @media screen and ($desktop-widths)
     {
-        display: none;
-
-        @media screen and ($tablet-widths)
-        {
-            display: block;
-            position: absolute;
-            top: 106px;
-            left: 490px;
-            color: #444444;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 24px;
-        }
-
-        @media screen and ($desktop-widths)
-        {
-            left: 894px;
-        }
+        display: block;
+        position: absolute;
+        top: 105px;
+        left: 100px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
     }
-    .inputs
+}
+.sale
+{
+    display: none;
+    
+    @media screen and ($desktop-widths)
     {
-        display: none;
-        
-        @media screen and ($tablet-widths)
-        {
-            display: none;
-        }
-        
-        @media screen and ($desktop-widths)
-        {
-            position: absolute;
-            display: block;
-            top: 106px;
-            left: 76px;
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 24px;
-        }
+        display: block;
+        position: absolute;
+        top: 105px;
+        left: 320px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
     }
-    .sale
+}
+.header__delivery
+{
+    display: none;
+    
+    @media screen and ($tablet-widths)
     {
-        display: none;
-        
-        @media screen and ($tablet-widths)
-        {
-            display: none;
-        }
-        
-        @media screen and ($desktop-widths)
-        {
-            position: absolute;
-            display: block;
-            top: 106px;
-            left: 294px;
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 24px;
-        }
+        display: block;
+        position: absolute;
+        top: 106px;
+        right: 49px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
     }
 }

@@ -93,9 +93,31 @@
     .promo__promo-block--home
     {
         background: #68d1bc;
+        
+        &:hover
+        {
+            background: #5fd5bd;
+            color: white;
+            
+            .promo-block__header
+            {
+                color: white;
+            }
+        }
 
+        &:active
+        {
+            background: #5fd5bd;
+            color: #8ae0ce;
+            
+            .promo-block__header
+            {
+                color: #85dfcc;
+            }
+        }
         .promo-block__header
         {
+            
             margin-right: 119px;
             
             @media screen and ($desktop-widths)
@@ -108,6 +130,27 @@
     {
         background: #5bc4b3;
 
+        &:hover
+        {
+            background: #4bc1af;
+            color: white;
+            
+            .promo-block__header
+            {
+                color: white;
+            }
+        }
+
+        &:active
+        {
+            background: #4bc1af;
+            color: #8ae0ce;
+            
+            .promo-block__header
+            {
+                color: #85dfcc;
+            }
+        }
         .promo-block__header
         {
             margin-right: 115px;
