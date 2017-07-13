@@ -2,7 +2,9 @@
     img.footer__img(src="img/logo-mobile.svg" alt="Логотип")
     section.socio
         .socio__icon
-        img(src="img/icons/icon-insta.svg" alt="Социальная иконка")
+            svg(class="icon-insta")
+                use(xlink:href='img/icons/symbols.svg#icon-insta')
+        //img(src="img/icons/icon-insta.svg" alt="Социальная иконка")
         .socio__icon
         img(src="img/icons/icon-fb.svg" alt="Социальная иконка")
         .socio__icon

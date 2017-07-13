@@ -330,6 +330,11 @@ legend
             line-height: 18px;
             border: 0;
             
+            &:active
+            {
+                color: #757575;
+            }
+            
             @media screen and ($tablet-widths)
             {
                 margin: 0;
@@ -408,6 +413,7 @@ legend
         line-height: 18px;
         border: 0;
         resize: none;
+        outline: none;
     }
 }
 
@@ -488,6 +494,7 @@ p.form__attention
 
 .legend__email
 {
+    width: 100px;
     margin-top: 29px;
     display: flex;
 
@@ -580,6 +587,7 @@ p.form__attention
 
 .legend__tel
 {
+    width: 100px;
     @media screen and ($tablet-widths)
     {
         z-index: 2;
