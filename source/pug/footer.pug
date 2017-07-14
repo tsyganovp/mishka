@@ -1,15 +1,19 @@
 .footer
-    img.footer__img(src="img/logo-mobile.svg" alt="Логотип")
+    svg(class="footer__img" width="102" height="34" )
+                use(xlink:href='img/icons/symbols.svg#logo-mobile')
     section.socio
         .socio__icon
-            svg(class="icon-insta")
+            svg(class="icon-insta" width="22" height="21" )
                 use(xlink:href='img/icons/symbols.svg#icon-insta')
-        //img(src="img/icons/icon-insta.svg" alt="Социальная иконка")
         .socio__icon
-        img(src="img/icons/icon-fb.svg" alt="Социальная иконка")
+            svg(class="icon-fb" width="15" height = "29")
+                use(xlink:href='img/icons/symbols.svg#icon-fb')
         .socio__icon
-        img(src="img/icons/icon-twitter.svg" alt="Социальная иконка")
+            svg(class="icon-twitter" width ="24" height="20")
+                use(xlink:href='img/icons/symbols.svg#icon-twitter')
     .developers
         p.developers__text Разработано
         a(href="http://htmlacademy.ru")
-            img(src="img/htmlacademy.svg" alt="Логотип академии")
+            svg(class="developers__img" width="27" height="34")
+                use(xlink:href='img/icons/symbols.svg#htmlacademy')
+            

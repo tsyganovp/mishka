@@ -99,6 +99,10 @@
             background: #5fd5bd;
             color: white;
             
+            svg
+            {
+                fill: #5fd5bd;
+            }
             .promo-block__header
             {
                 color: white;
@@ -110,10 +114,19 @@
             background: #5fd5bd;
             color: #8ae0ce;
             
+            svg
+            {
+                fill: #4ac0ab
+            }
+            
             .promo-block__header
             {
                 color: #85dfcc;
             }
+        }
+        svg
+        {
+            fill:#42b19f;
         }
         .promo-block__header
         {
@@ -135,6 +148,11 @@
             background: #4bc1af;
             color: white;
             
+            svg
+            {
+                fill: #2fa693;
+            }
+            
             .promo-block__header
             {
                 color: white;
@@ -146,14 +164,22 @@
             background: #4bc1af;
             color: #8ae0ce;
             
+            svg
+            {
+                fill: #3cb2a1;
+            }
             .promo-block__header
             {
                 color: #85dfcc;
             }
         }
+        svg
+        {
+            fill: #3bab9a;
+        }
         .promo-block__header
         {
-            margin-right: 115px;
+            margin-right: 103px;
             
             @media screen and ($desktop-widths)
             {

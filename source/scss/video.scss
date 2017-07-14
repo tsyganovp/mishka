@@ -24,7 +24,7 @@
     
     .video__header
     {
-        padding-top: 23px;
+        padding-top: 35px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -42,7 +42,12 @@
             padding-left: 37px;
         }
         
-        img
+        svg
+        {
+            fill: #68d1bc;
+        }
+        
+        .developers__img
         {
             margin-left: 34px;
             margin-right: 25px;
@@ -103,6 +108,7 @@
             
             &:hover
             {
+                cursor: pointer;
                 transform: scale(1.2);
             }
             &:active

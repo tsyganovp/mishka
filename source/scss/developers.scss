@@ -11,8 +11,9 @@
     
     @media screen and ($tablet-widths)
     {
+        padding-top: 0;
         width: 47%;
-        padding-top: 25px;
+        //padding-top: 25px;
         margin: 0;
     }
     
@@ -35,10 +36,23 @@
             padding-right: 19px;
         }  
     }
-    
-    img
+    svg path
     {
+        fill: inherit;
+    }
+    svg
+    {
+        fill: #68d1bc;
         width: 36px;
         height: 36px;
+        
+        &:hover
+        {
+            fill: #6ccabc;
+        }
+        &:active
+        {
+           fill: #c0e3de;
+        }
     }
 }

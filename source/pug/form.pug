@@ -53,14 +53,17 @@ section.form-block
                 .contacts__tel
                   input(type="tel" id="tel" class="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*")
                   label(for="tel")
-                      img(src="img/icon-phone.svg" alt="Иконка телефона")
+                        svg(class="developers__img" width="25" height="24")
+                            use(xlink:href='img/icons/symbols.svg#icon-phone')
         legend.legend__email e-mail
         .form-block.contacts-group.contacts-group--email
              .contacts-group__block
                 .contacts__email
                   input(type="email" id="email" class="email" name="email" placeholder="Ваш Email*")
                   label(for="email")
-                      img(src="img/icon-mail.svg" alt="Иконка почты")
+                    
+                      svg(class="developers__img" width="32" height="30")
+                            use(xlink:href='img/icons/symbols.svg#icon-mail')
         legend.legend__additional ДОП
         .contacts__message
            textarea(placeholder="Опишите все ваши пожелания к заказу")

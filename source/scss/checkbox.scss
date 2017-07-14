@@ -90,7 +90,7 @@
 /* Сдвигаем переключатель чекбокса, когда он включен. */
 .checkbox:checked + label:after
 {
-  content:  url("../img/icon-tick.svg");
+  content:  url("../img/icons/icon-tick.svg");
   //left: 26px;
 }
 /* Показываем получение фокуса. */

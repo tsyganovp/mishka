@@ -8,12 +8,22 @@
         {
             content: "";
             //content: url(../img/bg-zigzag-fill.svg);
-            background: url(../img/bg-zigzag-fill.svg);
-            width: 768px;
+            background: url(../img/icons/bg-zigzag-fill.svg);
+            width: 100%;
             height: 31px;
             position: absolute;
-            bottom: 118px;
+            bottom: 172px;
             //left: -50px;
+            
+            @media screen and ($tablet-widths)
+            {
+                bottom:119px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                bottom: 172px;
+            }
         }
     }
 }

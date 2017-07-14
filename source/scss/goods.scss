@@ -185,15 +185,38 @@
         flex-direction: row;
         justify-content: flex-start;
         
+        &:hover
+        {
+            cursor: pointer;
+            color: #9a9a9a;
+            
+            svg
+            {
+                 fill: #6ed2be;
+            }
+        }
+        &:active
+        {
+            color: #ececec;
+            
+            svg
+            {
+                fill: #ececec;
+            }
+        }
         @media screen and ($tablet-widths)
         {
             width: 280px;
             margin: 0;
-            margin-left: 34px;
+            padding-left: 34px;
+        }
+        svg
+        {
+            fill: #d9d8d8;
         }
         .cart__price
         {
-            padding-right: 114px;
+            margin-right: 114px;
             color: #000000;
             font-size: 15px;
             font-weight: 700;
@@ -201,7 +224,7 @@
             
             @media screen and ($tablet-widths)
             {
-                padding-right: 168px;
+                margin-right: 168px;
                 font-size: 17px;
                 font-weight: 700;
                 line-height: 24px;
@@ -209,7 +232,7 @@
             
             @media screen and ($desktop-widths)
             {
-                padding-right: 154px;
+                margin-right: 154px;
             }
         }
     }

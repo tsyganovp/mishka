@@ -186,3 +186,16 @@
         }
     }
 }
+.btn-block__btn
+{
+    &:hover
+    {
+        cursor: pointer;
+        fill: #878787;
+    }
+    
+    &:active
+    {
+        fill: #d0d0d0;
+    }
+}
