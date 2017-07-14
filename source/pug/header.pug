@@ -1,15 +1,16 @@
 section.page-header
     .header__inner
       .header__logo
-        picture
-          source(media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg")
-          source(media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg")
-          img(src="img/icons/logo-mobile.svg" alt="Логотип")
+        a(class="logo-link" href="index.html")
+            picture
+              source(media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg")
+              source(media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg")
+              img(src="img/icons/logo-mobile.svg" alt="Логотип")
       button.toogler(type="button")
       nav.header__nav.header__nav--closed
           ul
             li(class="nav__item nav__item--catalog")
-              a(class="nav__link nav__link--catalog") Каталог товаров
+              a(class="nav__link nav__link--catalog" href="catalog.html") Каталог товаров
             li(class="nav__item nav__item--order")
                a(class="nav__link nav__link--order") Вязание на заказ
             li(class="nav__item nav__item--search")

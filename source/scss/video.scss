@@ -41,26 +41,19 @@
             padding-top: 42px;
             padding-left: 37px;
         }
-        
-        svg
+        .header__icon
         {
-            fill: #68d1bc;
-        }
-        
-        .developers__img
-        {
-            margin-left: 34px;
-            margin-right: 25px;
-            margin-bottom: 40px;
-            
             @media screen and ($tablet-widths)
             {
-                margin-left: 41px;
-                margin-right: 15px;
-                margin-top: 3px;
-                margin-bottom: 0;
+                padding-left: 37px;
+            }
+            svg
+            {
+                fill: #68d1bc;
             }
         }
+        
+        
         
         h2
         {
