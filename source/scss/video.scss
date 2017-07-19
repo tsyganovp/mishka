@@ -1,0 +1,188 @@
+.video
+{
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 58px;
+    border: 1px solid #ececec;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        width: 668px;
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        position: relative;
+        width: 1050px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .video__header
+    {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 2;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            flex-direction: column;
+            padding-top: 42px;
+            padding-left: 37px;
+        }
+        .header__icon
+        {
+            @media screen and ($tablet-widths)
+            {
+                padding-left: 37px;
+            }
+            svg
+            {
+                fill: #68d1bc;
+            }
+        }
+        
+        
+        
+        h2
+        {
+            align-self: flex-start;
+            color: #000000;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-top: 9px;
+                padding-left: 17px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 100px;
+                padding-top: 21px;
+                padding-left: 41px;
+            }
+        }
+    }
+    .video__screen
+    {
+        position: relative;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 1;
+        }
+        
+        img
+        {
+            vertical-align: middle;
+        }
+        .video__play
+        {
+            position: absolute;
+            top:36px;
+            left: 79px;
+            
+            &:hover
+            {
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+            &:active
+            {
+                transform: scale(0.8);
+            }
+            @media screen and ($tablet-widths)
+            {
+                top: 186px;
+                left: 280px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                top: 192px;
+                left: 289px;
+            }
+        }
+    }
+    .video__text
+    {
+        margin-top: 22px;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-top: 31px;
+            order: 3;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            position: absolute;
+            width: 235px;
+            top: 150px;
+            right: 90px;
+        }
+        
+        p
+        {
+            width: 95%;
+            padding-left: 34px;
+            padding-bottom: 29px;
+            color: #444444;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                //width: 95%;
+                //margin-top: 30px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+    .video__button
+    {
+        margin: 0 auto;
+        margin-top: 19px;
+        margin-bottom: 33px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        width: 190px;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 4;
+            width: 581px;
+            margin-top: 6px;
+            margin-bottom: 44px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            position: absolute;
+            width: 226px;
+            margin: 0;
+            right: 58px;
+            top: 346px;
+        }
+    }    
+}

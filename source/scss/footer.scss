@@ -1,0 +1,32 @@
+.footer
+{
+    background: #f2f2f2;
+
+    @media screen and ($tablet-widths)
+    {
+        display: flex;
+        padding-left: 49px;
+        padding-top: 57px;
+        padding-bottom: 50px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-top: 106px;
+        padding-top: 58px;
+        padding-left: 72px;
+    }
+
+    .footer__img
+    {
+        display: none;
+
+        @media screen and ($tablet-widths)
+        {
+            margin-top: 23px;
+            display: block;
+            margin: 0;
+
+        }
+    }
+}

@@ -2,13 +2,10 @@ extends ../../pug/layout/layout
 block header
     include ../header
     section.catalog
-      .catalog__header
-        h1 Каталог товаров
+        h1.intro__header.catalog__header Каталог товаров
 block goods
   include ../goods
 block video
   include ../video
-block socio
-    include ../socio
-block developers
-    include ../developers
+block footer
+    include ../footer

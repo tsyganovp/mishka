@@ -1,0 +1,85 @@
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensans.woff"); /* разные файлы */
+    font-weight: normal;
+}
+
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensans.woff"); /* разные файлы */
+    font-weight: bold;
+}
+
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensans.woff2"); /* разные файлы */
+    font-weight: normal;
+}
+
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensans.woff2"); /* разные файлы */
+    font-weight: bold;
+}
+
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensansbold.woff"); /* разные файлы */
+    font-weight: bold;
+}
+@font-face 
+{
+    font-family: "Open Sans";       /* название одно */
+    src: url("../fonts/opensansbold.woff2"); /* разные файлы */
+    font-weight: bold;
+}
+body
+{
+    font-family: "Open Sans","Roboto",sans-serif;
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and ($tablet-widths)
+    {
+        margin: 0 auto;
+        max-width: 768px;
+        box-shadow: 0 0 35px #dedede;
+    }
+
+    @media screen and ($desktop-widths)
+    {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0 0 35px #dedede;
+    }
+}
+h1,h2,h3,p,li
+{
+    margin: 0;
+    padding: 0;
+}
+//настройки
+
+p
+{
+    font-weight: normal;
+}
+ul
+{
+    margin: 0;
+}
+fieldset
+{
+    padding: 0;
+}
+svg path
+{
+    fill: inherit;
+}

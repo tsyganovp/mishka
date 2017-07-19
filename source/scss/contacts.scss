@@ -1,0 +1,195 @@
+.contacts
+{
+    padding-left: 30px;
+    /*
+    &:before
+    {
+        content: url(../img/bg-zigzag-line.svg);
+    }
+    */
+    
+    @media screen and($tablet-widths)
+    {
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;   
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        width: auto;
+        margin-top: 91px;
+        padding-left: 162px;
+        padding-bottom: 105px;
+        align-items: flex-start;      
+    }
+
+    h2
+    {
+        margin-top: 24px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+
+        @media screen and($tablet-widths)
+        {
+            margin-top: 74px;
+            margin-right: 405px;
+            margin-left: 15px;
+            //margin-right: 0;
+            color: #000000;
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        
+        @media screen and($desktop-widths)
+        {
+            margin-left: 59px;
+            margin-right: 0;
+            order: 2;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
+    }
+    
+    svg
+    {
+        display: none;
+        
+        @media screen and($tablet-widths)
+        {
+            margin-top: 59px;
+            display: block;
+        }
+        
+        @media screen and($desktop-widths)
+        {
+            margin-top: 65px;
+            order: 1;
+        }
+    }
+    
+    .contacts__table
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 17px;
+        
+        @media screen and($tablet-widths)
+        {
+            margin-top: 24px;
+            flex-direction: row;
+        }
+        
+        @media screen and($desktop-widths)
+        {
+            width: 70%;
+            flex-direction: column;
+            order: 3;
+            //margin-left: 89px;
+        }
+
+        .contacts__row
+        {
+            display: flex;
+            flex-direction: row;
+            padding-top: 9px;
+            padding-bottom: 21px;
+            color: #757575;
+            color: #444444;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            
+            &:last-of-type
+            {
+                @media screen and($tablet-widths)
+                {
+                    width: 60%;
+                }
+            }
+            
+            @media screen and($tablet-widths)
+            {
+                 width: 40%;
+                 margin-left: 25px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 55%;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    
+        .row__header
+        {
+            width: 25%;
+
+            &:nth-child(2)
+            {
+                border-bottom: 1px solid #62d1ba;
+            }
+            
+            @media screen and($desktop-widths)
+            {
+                padding-left: 87px;
+                width: 16%;
+            }
+        }
+        
+        .contacts__email,
+        .contacts__address
+        {
+            width: 50%;
+        }
+        
+        .contacts__email
+        {
+            padding-top:0;
+            padding-bottom: 0;
+            
+            @media screen and ($tablet-widths)
+            {
+                width: 50%;
+                padding-top: 0;
+            }
+            @media screen and ($desktop-widths)
+            {
+                margin-left: 0px;
+
+            }
+            
+            &:hover
+            {
+                color: #8ed8cd;
+            }
+            
+            &:hover
+            {
+                color: #ccede8;
+            }
+        }
+        .contacts__address
+        {
+            @media screen and ($tablet-widths)
+            {
+                width: 40%;
+                padding-top: 0;
+            }
+            @media screen and ($desktop-widths)
+            {
+               width: 40%;
+               margin-left: 0px;
+            }
+        }
+    }
+}

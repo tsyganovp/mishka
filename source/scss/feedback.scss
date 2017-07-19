@@ -1,0 +1,11 @@
+.feedback
+{
+    padding-left: 30px;
+
+    @media screen and($tablet-widths)
+    {
+        margin-top: 27px;
+        display: flex;
+        padding-left: 0px;
+    }
+}

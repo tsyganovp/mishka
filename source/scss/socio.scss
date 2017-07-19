@@ -1,0 +1,47 @@
+.socio
+{
+    margin: 0 auto;
+    padding-left: 67px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 252px;
+    display: flex;
+    flex-direction: row;
+    background: #f2f2f2;
+    //justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+
+    @media screen and ($tablet-widths)
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin: 0 auto;
+        margin-left: 157px;
+        //margin-right: 8px;
+        padding: 0;
+        border: 0;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left:330px;
+    }
+
+    .socio__icon
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        &:hover
+        {
+            cursor: pointer;
+            fill: #85d2c6;
+        }
+        &:active
+        {
+            fill: #c4e4df;
+        }
+    }
+}

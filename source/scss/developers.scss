@@ -1,0 +1,58 @@
+.developers
+{
+    margin: 0 auto;
+    padding-top: 19px;
+    padding-bottom: 31px;
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    @media screen and ($tablet-widths)
+    {
+        padding-top: 0;
+        width: 47%;
+        //padding-top: 25px;
+        margin: 0;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        width: 30%;
+    }
+
+    .developers__text
+    {
+        padding-right: 30px;
+        color: #000000;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 18px;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin: 0;
+            padding-right: 19px;
+        }  
+    }
+    svg path
+    {
+        fill: inherit;
+    }
+    svg
+    {
+        fill: #68d1bc;
+        width: 36px;
+        height: 36px;
+        
+        &:hover
+        {
+            fill: #6ccabc;
+        }
+        &:active
+        {
+           fill: #c0e3de;
+        }
+    }
+}

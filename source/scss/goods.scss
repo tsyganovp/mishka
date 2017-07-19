@@ -1,0 +1,240 @@
+.goods
+{
+    width: 260px;
+    margin: 0 auto;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 80px;
+        width: 668px;
+        position: relative;
+        
+        &:before
+        {
+            content: "";
+            //content: url(../img/bg-zigzag-fill.svg);
+            background: url(../img/bg-zigzag-fill.svg);
+            width: 768px;
+            height: 31px;
+            position: absolute;
+            top: -98px;
+            left: -50px;
+        }
+    }
+    
+    @media screen and($desktop-widths)
+    {
+        width: 1050px;  
+        margin-top: 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        &:before
+        {
+            width: 1147px;
+            top: -143px;
+        }
+    }
+}
+
+.good
+{
+    margin-top: 30px;
+    border: 1px solid #ececec;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        width: 667px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        
+         &:first-of-type
+        {
+             margin-top: 30px;
+        }
+    }
+    
+    &:hover
+    {
+        box-shadow: 0 0 35px #dedede;
+    }
+    
+    &:active
+    {
+        box-shadow: 0 0 15px #dedede;
+    }
+    
+    @media screen and($desktop-widths)
+    {
+        width: 315px;
+        margin: 0 auto; 
+        margin-left: 27px;
+        margin-right: 27px;
+        
+        &:first-of-type
+        {
+            margin: 0;
+            margin-left: 0px;
+            margin-right: 21px;
+        }
+        
+        &:last-of-type
+        {
+            margin: 0;
+            margin-left: 21px;
+            margin-right: 0px;
+        }
+    }
+    .good__img
+    {
+        img
+        {
+            vertical-align: middle;
+        }
+    }
+    .good__description
+    {
+        &:last-of-type
+        {
+            @media screen and ($tablet-widths)
+            {
+                width: 30%;
+            }
+        }
+    }
+    .good__text
+    {
+        @media screen and ($tablet-widths)
+        {
+            width: 282px;
+            padding-bottom: 159px;               
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            padding-bottom: 23px;
+        }
+    }
+    .good__text--last
+    {
+        @media screen and ($tablet-widths)
+        {
+            padding-bottom: 135px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+           padding-bottom: 0px; 
+        }
+    }
+    .good__name
+    {
+        padding-top: 23px;
+        padding-bottom: 5px;
+        text-align: center;
+        color: #000000;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 24px;
+        
+        @media screen and ($tablet-widths)
+        {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        
+        &:hover
+        {
+            cursor: pointer;
+            color: #666666;
+        }
+
+        &:active
+        {
+            color: #b2b2b2;
+        }
+    }
+    .good__descr
+    {
+        padding-left: 32px;
+        padding-bottom: 18px;
+        color: #444444;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 30px;
+        
+        @media screen and ($tablet-widths)
+        {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+    .good__cart
+    {
+        margin: 0 auto;
+        padding-top: 22px;
+        padding-bottom: 26px;
+        border-top: 1px solid #ececec;
+        width: 205px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        &:hover
+        {
+            cursor: pointer;
+            color: #9a9a9a;
+            
+            svg
+            {
+                 fill: #6ed2be;
+            }
+        }
+        &:active
+        {
+            color: #ececec;
+            
+            svg
+            {
+                fill: #ececec;
+            }
+        }
+        @media screen and ($tablet-widths)
+        {
+            width: 280px;
+            margin: 0;
+            padding-left: 34px;
+        }
+        svg
+        {
+            fill: #d9d8d8;
+        }
+        .cart__price
+        {
+            margin-right: 114px;
+            color: #000000;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 24px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-right: 168px;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 154px;
+            }
+        }
+    }
+    
+}

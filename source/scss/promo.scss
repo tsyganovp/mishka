@@ -1,0 +1,190 @@
+.promo
+{
+    background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -13%;
+
+    @media screen and($tablet-widths)
+    {
+        //width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: url("../img/hero-desktop@1x.jpg") no-repeat 50% 0%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    
+    .promo__header
+    {
+        padding: 38px;
+        padding-top: 70px;
+        padding-bottom: 120px;
+        text-align: center;
+        color: black;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 30px;
+
+        @media screen and ($tablet-widths)
+        {
+            padding-top: 153px;
+            padding-bottom: 374px;
+            color: #000000;
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            padding-left: 135px;
+            padding-right: 135px;
+            padding-bottom: 361px;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
+    }
+    
+    .promo__promo-block
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 30px;
+        padding-top: 24px;
+        padding-bottom: 18px;
+
+        @media screen and ($tablet-widths)
+        {
+            padding-left: 38px;
+            padding-top: 27px;
+            padding-bottom: 28px;
+            width: 44.3%;  
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            width: 46.3%;
+        }
+
+        .promo-block__header
+        {
+            width: 100px;
+            color: white;
+            font-family: "Open Sans";
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        img
+        {
+            padding-right: 36px;
+            
+        }
+    }
+    
+    .promo__promo-block--home
+    {
+        background: #68d1bc;
+        
+        &:hover
+        {
+            background: #5fd5bd;
+            color: white;
+            
+            svg
+            {
+                fill: #5fd5bd;
+            }
+            .promo-block__header
+            {
+                color: white;
+            }
+        }
+
+        &:active
+        {
+            background: #5fd5bd;
+            color: #8ae0ce;
+            
+            svg
+            {
+                fill: #4ac0ab
+            }
+            
+            .promo-block__header
+            {
+                color: #85dfcc;
+            }
+        }
+        svg
+        {
+            fill:#42b19f;
+        }
+        .promo-block__header
+        {
+            
+            margin-right: 119px;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 313px;
+            }
+        }
+    }
+    .promo__promo-block--toys
+    {
+        background: #5bc4b3;
+
+        &:hover
+        {
+            background: #4bc1af;
+            color: white;
+            
+            svg
+            {
+                fill: #2fa693;
+            }
+            
+            .promo-block__header
+            {
+                color: white;
+            }
+        }
+
+        &:active
+        {
+            background: #4bc1af;
+            color: #8ae0ce;
+            
+            svg
+            {
+                fill: #3cb2a1;
+            }
+            .promo-block__header
+            {
+                color: #85dfcc;
+            }
+        }
+        svg
+        {
+            fill: #3bab9a;
+        }
+        .promo-block__header
+        {
+            margin-right: 103px;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 303px;
+            }
+        }
+    }
+}

@@ -1,0 +1,604 @@
+.form
+{
+    margin: 0 auto;
+    width: 260px;
+    
+    @media screen and ($tablet-widths)
+    {
+        width: 768px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        width: 1150px;
+    }
+}
+.form-block
+{
+    @media screen and ($tablet-widths)
+    {
+        position: relative;
+    }
+}
+
+legend
+{
+    width: 260px;
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: #63d1bb;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:after
+    {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 61px;
+        background: #62d1ba;
+        height: 1px;
+        width: 198px;      
+    }
+    
+    @media screen and ($tablet-widths)
+    {
+        //width: 600px;
+        margin-top: 75px;
+        margin-left: 50px;
+        margin-bottom: 145px;
+   
+        &:after
+        {
+            display: none;
+        }
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left: 111px; 
+    }
+}
+.color
+{
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        top: 229px;
+        margin: 0;
+        margin-left: 50px;
+        margin-bottom: 67px;
+        z-index: 2;       
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left: 108px;
+    }
+}
+
+.person
+{
+    @media screen and ($tablet-widths)
+    {
+        margin: 0;
+        margin-left: 48px;
+        position: absolute;
+        //left: 73px;     
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+         margin-left: 108px;
+    }
+}
+
+.checkbox-group
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border: 0; 
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-bottom: 67px;
+        padding-top: 20px;
+        padding-bottom: 66px;
+        padding-left: 217px;
+        background: #f2f2f2;
+        flex-direction: row;
+        flex-wrap: wrap;    
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        padding-left: 224px;
+    }
+
+    .checkbox-block
+    {
+        margin-top: 29px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        p
+        {
+            margin-top: 8px;
+            margin-left: 61px;
+            color: #000000;
+            font-family: "Open Sans";
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 18px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 15px;
+                margin-left: 84px;
+            }
+        }
+        &:nth-child(1)
+        {
+            margin-top: 25px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-right: 119px;
+            }
+        }
+        
+        &:nth-child(2)
+        {
+            margin-top: 33px;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-top: 26px;
+            }
+        }
+        &:nth-child(3)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+                margin-right: 79px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-top: 26px;
+                margin-left: 123px;
+            }
+        }
+        &:nth-child(4)
+        {
+            margin-top: 35px;
+
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 108px;
+            }
+        }
+        
+        &:nth-child(5)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+                margin-right: 100px;
+            }
+        }
+        
+        &:nth-child(6)
+        {
+            margin-top: 35px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-top: 44px;
+            }
+        }
+        
+    }
+}
+
+.radio-group
+{
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 0; 
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        right: 258px;
+        top: -34px;
+    }
+    
+    @media screen and($desktop-widths)
+    {
+           right: 656px;
+            top: -36px; 
+    }
+
+    .radio-block
+    {
+        margin-top: 23px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-bottom: 28px;
+        }
+
+        p
+        {
+            margin-top: 8px;
+            margin-left: 61px;
+            color: #000000;
+            font-family: "Open Sans";
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+    }
+}
+.person-group
+{
+    margin-top: 7px;
+    margin-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 0;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-left: 220px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+    }
+    
+    .person-group__block 
+    {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid black;
+        
+        @media screen and ($tablet-widths)
+        {
+            margin-bottom: 53px;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 0;
+        }
+
+        label
+        {
+            margin-top: 28px;
+            color: #000000;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 18px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                padding: 0;
+                margin-right: 27px;
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 18px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-right: 51px;
+            }
+        }
+
+        input
+        {
+            padding-top: 14px;
+            padding-bottom: 10px;
+            opacity: 0.3;
+            color: #444444;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 18px;
+            border: 0;
+            
+            &:active
+            {
+                color: #757575;
+            }
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                padding: 0;
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+}
+.contacts-group
+{
+    border: 0;
+    
+    @media screen and ($tablet-widths)
+    {
+        padding-top: 47px;
+        padding-left: 230px;
+        background: #f2f2f2;
+    }
+    .contacts__tel
+    {
+        padding-top: 13px;
+        padding-bottom: 14px;
+        display: flex;
+    }
+}
+.contacts-group--email
+{
+    @media screen and ($tablet-widths)
+    {
+        padding-top: 15px;
+        padding-bottom: 49px;
+    }
+}
+.contacts__message
+{
+    margin-top: 24px;
+    border: 2px solid black;
+    
+    &:hover
+    {
+        border: 2px solid #67d1bb;
+    }
+    
+    &:active
+    {
+        border: 2px solid #67d1bb;
+    }
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-top: 52px;
+        margin-left: 217px;
+        margin-right: 49px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left: 224px;
+        margin-right: 224px;
+    }
+
+    textarea
+    {
+        width: 95%;
+        padding-top: 13px;
+        padding-left: 11px;
+        padding-bottom: 81px;
+        opacity: 0.3;
+        color: #444444;
+        font-family: "Open Sans";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 18px;
+        border: 0;
+        resize: none;
+        outline: none;
+    }
+}
+
+p.form__attention
+{
+     margin-left: 30px;
+    margin-top: 17px;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        right: 0;
+        margin-right: 49px;
+        margin-top: 63px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-right: 249px;
+    }
+}
+.btn__confirm
+{
+      margin: 0 auto;
+    width: 258px;
+  margin-top: 31px;
+  margin-bottom: 53px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin: 0;
+        margin-top: 54px;
+        margin-left: 50px;
+        margin-bottom: 48px;
+        width: 226px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-top: 51px;
+        margin-left: 250px;
+    }
+}
+
+.legend__additional
+{
+    margin-top: 39px;
+    
+    @media screen and ($tablet-widths)
+    {
+        position: absolute;
+        margin: 0;
+        margin-top: 69px;
+        margin-left: 51px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-left: 110px;
+    }
+}
+
+.contacts__email
+{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.legend__email
+{
+    width: 100px;
+    margin-top: 29px;
+    display: flex;
+
+    &:after
+    {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 80px;
+        background: #62d1ba;
+        height: 1px;
+        width: 180px;      
+    }
+    
+    @media screen and ($tablet-widths)
+    {
+        z-index: 2;
+        position: absolute;
+        margin: 0;
+        margin-top: 41px;
+        margin-left: 51px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+         margin-left: 110px;
+    }
+}
+
+.contacts-group__block
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background: white;
+    
+    @media screen and ($tablet-widths)
+    {
+        margin-right: 50px;
+        background: #f2f2f2;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        margin-right: 225px;
+    }
+    
+    input
+    {
+        padding-right: 28px;
+        opacity: 0.3;
+        color: #444444;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 18px;
+        //background: #f2f2f2;
+        border: 0;
+        
+        @media screen and ($tablet-widths)
+        {
+            background: #f2f2f2;
+            padding-right: 247px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            background: #f2f2f2;
+            padding-right: 473px;
+        }
+    }
+    .email
+    {
+        padding-right: 26px;
+        
+        @media screen and ($tablet-widths)
+        {   
+            padding-right: 225px;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            padding-right: 451px;
+        }
+    }
+}
+
+.legend__tel
+{
+    width: 100px;
+    @media screen and ($tablet-widths)
+    {
+        z-index: 2;
+        position: absolute;
+        margin: 0;
+        margin-top: 69px;
+        margin-left: 51px;
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+         margin-left: 110px;
+    }
+}

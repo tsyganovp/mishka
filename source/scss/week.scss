@@ -1,0 +1,253 @@
+.week
+{
+    padding-left: 29px;
+    padding-right: 25px;
+
+    @media screen and ($tablet-widths)
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        //width: 768px;
+        position: relative;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: right;
+        
+        &:before
+        {
+            content: "";
+            //content: url(../img/bg-zigzag-fill.svg);
+            background: url(../img/icons/bg-zigzag-fill.svg);
+            width: 753px;
+            height: 31px;
+            position: absolute;
+            top: -16px;
+            left: 14px;
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 1185px;
+            }
+        }
+        
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        padding-bottom: 290px;
+        text-align: left;
+    }
+    
+    .week__good-name
+    {
+        padding-top: 27px;
+        padding-bottom: 8px;
+        //text-align: center;
+        color: #000000;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+
+        @media screen and ($tablet-widths)
+        {
+            padding-top: 47px;
+            color: #000000;
+            font-family: "Open Sans";
+            font-size: 43px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            order: 2;
+            z-index: 2;
+            width: 69%;
+            padding-top: 124px;
+            padding-left: 35px;
+            font-size: 53px;
+            font-weight: 700;
+            line-height: 57px;
+        }
+    }
+    .week__good-week
+    {
+        padding-bottom: 21px;
+        color: #63d1bb;
+        font-family: "Open Sans";
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @media screen and($tablet-widths)
+        {
+            width: 90px;
+            padding-top: 55px;
+            padding-left: 132px;
+            text-align: center;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            order: 1;
+            width: 10%;
+            padding-left: 51px;
+            padding-top: 137px;
+        }
+    }
+    
+    .week__information
+    {
+        @media screen and($tablet-widths)
+        {
+            position: relative;
+            width: 282px;
+            margin-top: 30px;
+            margin-right: 52px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-left: 200px;
+            order: 3;
+        }
+
+        .week__text
+        {
+            color: #757575;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+            @media screen and($tablet-widths)
+            {
+                text-align: left;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 30px;  
+            }
+        }
+        .week__table
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 12px;
+
+            @media screen and($tablet-widths)
+            {
+                margin-top: 33px;
+                text-align:left;
+            }
+            @media screen and ($desktop-widths)
+            {
+                margin-top: 48px;
+            }
+
+            .table__row
+            {
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+                padding-bottom: 9px;
+                color: #757575;
+                border-bottom: 1px solid #ededed;
+
+                .table__head
+                {
+                    width: 30%;
+                    //margin-right: 0px;
+
+                    &:last-of-type
+                    {
+                        width: 55%;
+                        padding-left: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .week__good
+    {
+        //width: 333px;
+        //padding-bottom: 40px;
+        
+        @media screen and ($tablet-widths)
+        {
+            width: 333px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            width: 43%;
+            position: absolute;
+            right: 79px;
+            top: 36px;
+        }
+        .good__image
+        {
+            margin-top: 24px;
+
+            @media screen and($tablet-widths)
+            {
+                margin-top: 37px;    
+            }
+
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+    
+    .good__price
+    {
+        margin-top: 13px;
+        text-align: center;
+        color: #444444;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+
+        @media screen and($tablet-widths)
+        {
+            position: absolute;
+            top: 435px;
+            left: 122px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            top: 586px;
+            left: 324px;
+        }
+    }
+    
+    .good__buy
+    {
+        width: 257px;
+        margin-top: 26px;
+        margin-bottom: 72px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        @media screen and($tablet-widths)
+        {
+            width: 288px;
+            position: absolute;
+            top: 480px;
+            left: 48px;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            top: 630px;
+            left: 250px;
+        }
+    }
+}

@@ -1,9 +1,29 @@
 section.page-header
     .header__inner
       .header__logo
-        img(src="#" alt="Логотип")
-        button.nav__toogle(type="button")
+        a(class="logo-link" href="index.html")
+            picture
+              source(media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg")
+              source(media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg")
+              img(src="img/icons/logo-mobile.svg" alt="Логотип")
+      button.toogler(type="button")
       nav.header__nav.header__nav--closed
-          each item in ["main","main","main","main","main"] 
-            li(class="nav__item")
-              a(class=`link-${item}`)=item
+          ul
+            li(class="nav__item nav__item--catalog")
+              a(class="nav__link nav__link--catalog" href="catalog.html") Каталог товаров
+            li(class="nav__item nav__item--order")
+               a(class="nav__link nav__link--order") Вязание на заказ
+            li(class="nav__item nav__item--search")
+              a(class="nav__link nav__link--search")
+               svg(class="nav-icon" width="22" height="21" )
+                use(xlink:href='img/icons/symbols.svg#icon-search')
+                p Поиск по сайту
+            li(class="nav__item nav__item--cart")
+               a(class="nav__link nav__link--cart")
+                svg(class="nav-icon" width="22" height="21" )
+                    use(xlink:href='img/icons/symbols.svg#icon-cart')
+                p Корзина    
+      .header__delivery
+        p Бесплатная доставка по России
+      p.inputs Новые поступления
+      p.sale Распродажа

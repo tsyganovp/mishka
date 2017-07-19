@@ -1,0 +1,32 @@
+.btn
+{
+    text-decoration: none;
+    margin-top: 28px;
+    margin-bottom: 35px;
+    //padding-left: 84px;
+    padding-top: 20px;
+    //padding-right: 82px;
+    padding-bottom: 20px;
+    display: block;
+    border: 2px solid #444444;
+    text-align: center;
+    text-decoration: none;
+    color: #444444;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+    &:hover
+    {
+        background: #444444;
+        color: white;
+    }
+    
+    &:active
+    {
+        background: #444444;
+        color: #777777;
+    }
+
+}
