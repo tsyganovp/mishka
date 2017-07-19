@@ -1,0 +1,57 @@
+section.form-block
+        form.form
+            fieldset.radio-group
+                legend Тип
+                    p.radio-group__text  
+                        label(for="accessory") Аксессуар для интерьера
+                    input(type="radio" id="accessory")
+                legend Детская игрушка
+                    p.radio-group__text 
+                        label(for="toy") Детская игрушка
+                    input(type="radio" id="toy")
+            fieldset.checkbox-group
+                 legend Цвет
+                    p.checkbox-group__text 
+                        label(for="white") Белый
+                    input(type="checkbox" id="white")
+                    p.checkbox-group__text 
+                        label(for="gray") Серый
+                    input(type="checkbox" id="gray")
+                    p.checkbox-group__text 
+                        label(for="tiffany") "Тиффани"
+                    input(type="checkbox" id="tiffany")
+                    p.checkbox-group__text 
+                        label(for="black") Черный
+                    input(type="checkbox" id="black")
+                    p.checkbox-group__text 
+                        label(for="pink") Розовый
+                    input(type="checkbox" id="pink")
+                    p.checkbox-group__text 
+                        label(for="orange") Оранжевый
+                    input(type="checkbox" id="orange")
+            fieldset.person-group
+                legend ФИО
+                    p.person-group__text 
+                        label(for="name") Имя
+                    input(type="text" id="name" placeholder="Введите ваше имя<sup>*</sup>")
+                    p.person-group__text 
+                        label(for="surname") Фамилия
+                    input(type="text" id="surname")
+                    p.person-group__text 
+                        label(for="acronym") Отчество
+                    input(type="text" id="acronym")
+            fieldset.contacts-group
+                legend ТЕЛ
+                    input(type="tel" id="tel")
+                    label(for="tel")
+                        img(src="#")
+                legend e-mail
+                    input(type="email" id="email")
+                    label(for="email")
+                        img(src="#")
+                legend ДОП
+                   textarea(placeholder="Опишите все ваши пожелания к заказу")
+            a.btn.btn__confirm(href="#") Отправить заказ
+                       
+                    
+                    
