@@ -29,9 +29,16 @@
             cursor: pointer;
         }
     }
-    .header__nav
+    .header__nav--open
+    {
+        display: block;
+    }
+    .header__nav--close
     {
         display: none;
+    }
+    .header__nav
+    {
         
         @media screen and ($tablet-widths)
         {
@@ -250,6 +257,10 @@
                 }
             }
         }
+    }
+    .header__nav--closed
+    {
+        display: none;
     }
 }
 .inputs
